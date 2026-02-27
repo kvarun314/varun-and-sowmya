@@ -557,6 +557,19 @@ body {
   line-height: 1.2;
 }
 
+.couple-name-line {
+  display: block;
+}
+
+.couple-amp {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 4.5vw, 1.6rem);
+  color: var(--text-gold);
+  line-height: 1;
+  margin: 0.15rem 0 0.35rem;
+}
+
 .event-date,
 .event-location {
   font-size: clamp(1rem, 2.5vw, 1.1rem);
