@@ -21,6 +21,7 @@
 
   <p class="salutation">जय सीता राम</p>
 
+  <!-- Hero: multiple photos with transitions -->
   <main class="hero">
     <div class="hero-carousel-outer">
     <div class="hero-carousel">
@@ -31,23 +32,27 @@
       <div class="hero-slides">
         <div class="hero-slide active">
           <img src="images/DSC03535%20(1).jpg" alt="Varun and Sowmya Shree" decoding="async" fetchpriority="high" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
-          <div class="hero-placeholder" aria-hidden="true">Photo 1</div>
+          <div class="hero-placeholder" aria-hidden="true">Photo 1<br><small>images/DSC03535 (1).jpg</small></div>
         </div>
         <div class="hero-slide">
           <img data-src="images/DSC04806%20(1).jpg" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
-          <div class="hero-placeholder" aria-hidden="true">Photo 2</div>
+          <div class="hero-placeholder" aria-hidden="true">Photo 2<br><small>images/DSC04806 (1).jpg</small></div>
         </div>
         <div class="hero-slide">
           <img data-src="images/DSC04998%20(1).jpg" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
-          <div class="hero-placeholder" aria-hidden="true">Photo 3</div>
+          <div class="hero-placeholder" aria-hidden="true">Photo 3<br><small>images/DSC04998 (1).jpg</small></div>
         </div>
         <div class="hero-slide">
           <img data-src="images/DSC05006%20(1).jpg" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
-          <div class="hero-placeholder" aria-hidden="true">Photo 4</div>
+          <div class="hero-placeholder" aria-hidden="true">Photo 4<br><small>images/DSC05006 (1).jpg</small></div>
         </div>
         <div class="hero-slide">
           <img data-src="images/DSC05017%20(1).jpg" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
-          <div class="hero-placeholder" aria-hidden="true">Photo 5</div>
+          <div class="hero-placeholder" aria-hidden="true">Photo 5<br><small>images/DSC05017 (1).jpg</small></div>
+        </div>
+        <div class="hero-slide">
+          <img data-src="images/DSC04959%20(1).jpg" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
+          <div class="hero-placeholder" aria-hidden="true">Photo 6<br><small>images/DSC04959 (1).jpg</small></div>
         </div>
       </div>
       <div class="hero-dots" aria-hidden="true"></div>
@@ -106,26 +111,17 @@
     <span class="section-divider-floral"></span>
   </div>
 
+  <p class="media-title">Engagement Video — 14 Nov 2025</p>
+
   <div class="media-gallery media-gallery-single">
-    <div class="media-item video" data-drive-id="1foaPSJbl_0bgHJRvZdsaOn_Pxl0YN3OO">
-      <!-- Custom thumbnail image for the video -->
-      <img
-        class="video-poster"
-        src="images/thumbnail.jpg"
-        alt="Play engagement video"
-        data-drive-thumb="https://drive.google.com/thumbnail?id=1foaPSJbl_0bgHJRvZdsaOn_Pxl0YN3OO&sz=w1280">
-      <button type="button" class="video-play-btn" aria-label="Play video">
-        <span class="video-play-icon" aria-hidden="true"></span>
-      </button>
-      <div class="video-embed-wrap" hidden>
-        <iframe
-          data-src="https://drive.google.com/file/d/1foaPSJbl_0bgHJRvZdsaOn_Pxl0YN3OO/preview?autoplay=1"
-          title="SOWMYASHREE &amp; VARUN ENGAGEMENT"
-          frameborder="0"
-          allow="autoplay"
-          allowfullscreen>
-        </iframe>
-      </div>
+    <div class="media-item video">
+      <iframe
+        src="https://drive.google.com/file/d/1foaPSJbl_0bgHJRvZdsaOn_Pxl0YN3OO/preview"
+        title="SOWMYASHREE &amp; VARUN ENGAGEMENT"
+        frameborder="0"
+        allow="autoplay"
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 
@@ -133,6 +129,7 @@
     <span class="section-divider-floral"></span>
   </div>
 
+  <!-- Details section (same page) -->
   <section id="details" class="section-details">
     <div class="section-corner section-corner-tl" aria-hidden="true"></div>
     <div class="section-corner section-corner-tr" aria-hidden="true"></div>
@@ -143,7 +140,7 @@
       <article class="details-card">
         <div class="venue-image-wrap">
           <img src="images/avadhi-convention-center-girinagar-bangalore-banquet-halls-09rrkwpwuk.jpg" alt="Avadhani Convention Center" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
-          <div class="hero-placeholder" aria-hidden="true">Venue photo</div>
+          <div class="hero-placeholder" aria-hidden="true">Venue photo<br><small>images/avadhi-convention-center-girinagar-bangalore-banquet-halls-09rrkwpwuk.jpg</small></div>
         </div>
         <h3 class="venue-name">Avadhani Convention Center</h3>
         <p class="venue-address">Girinagar, Bengaluru</p>
@@ -152,7 +149,7 @@
         <div class="timings-grid">
           <div class="timing-block">
             <p class="timing-label">Muhurtam</p>
-            <p class="timing-value">Monday, April 20, 2026 · 10:00 – 10:30 AM</p>
+            <p class="timing-value">Monday, April 20, 2026<br>10:00 – 10:30 AM</p>
           </div>
           <div class="timing-block">
             <p class="timing-label">Lagnam</p>
