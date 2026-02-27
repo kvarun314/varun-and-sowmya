@@ -901,6 +901,27 @@ body {
   color: var(--text-gold-dark);
 }
 
+/* Contact at end */
+.contact-line {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: clamp(0.9rem, 2vw, 0.95rem);
+  color: var(--text-body);
+}
+
+.contact-line a {
+  color: var(--text-gold);
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.contact-line a:hover {
+  color: var(--text-gold-dark);
+  text-decoration: underline;
+}
+
 /* ----- Responsive: mobile first, then tablet & desktop ----- */
 
 /* Small phones (e.g. 320–480px): already handled by base + clamp() */
