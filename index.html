@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="images/DSC03535.JPG" as="image">
 </head>
 <body>
   <header class="decorative-top" aria-hidden="true">
@@ -30,23 +31,23 @@
       <div class="hero-corner hero-corner-br" aria-hidden="true"></div>
       <div class="hero-slides">
         <div class="hero-slide active">
-          <img src="images/DSC03535.JPG" alt="Varun and Sowmya Shree" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
+          <img src="images/DSC03535.JPG" alt="Varun and Sowmya Shree" decoding="async" fetchpriority="high" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
           <div class="hero-placeholder" aria-hidden="true">Photo 1<br><small>images/DSC03535.JPG</small></div>
         </div>
         <div class="hero-slide">
-          <img src="images/DSC04806.JPG" alt="Varun and Sowmya Shree" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
+          <img data-src="images/DSC04806.JPG" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
           <div class="hero-placeholder" aria-hidden="true">Photo 2<br><small>images/DSC04806.JPG</small></div>
         </div>
         <div class="hero-slide">
-          <img src="images/DSC04998.JPG" alt="Varun and Sowmya Shree" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
+          <img data-src="images/DSC04998.JPG" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
           <div class="hero-placeholder" aria-hidden="true">Photo 3<br><small>images/DSC04998.JPG</small></div>
         </div>
         <div class="hero-slide">
-          <img src="images/DSC05006.JPG" alt="Varun and Sowmya Shree" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
+          <img data-src="images/DSC05006.JPG" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
           <div class="hero-placeholder" aria-hidden="true">Photo 4<br><small>images/DSC05006.JPG</small></div>
         </div>
         <div class="hero-slide">
-          <img src="images/DSC05017.JPG" alt="Varun and Sowmya Shree" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
+          <img data-src="images/DSC05017.JPG" alt="Varun and Sowmya Shree" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
           <div class="hero-placeholder" aria-hidden="true">Photo 5<br><small>images/DSC05017.JPG</small></div>
         </div>
       </div>
@@ -72,8 +73,8 @@
       <div class="ornament-line ornament-line-above-names" aria-hidden="true"></div>
       <h1 class="couple-names">Varun & Sowmya Shree</h1>
       <div class="ornament-line ornament-line-below-names" aria-hidden="true"></div>
-      <p class="event-date">Wedding — Monday, April 20, 2026 · 10:00 – 10:30 AM</p>
       <p class="event-date event-date-reception">Reception — Sunday, April 19, 2026 · 7:00 PM onwards</p>
+      <p class="event-date">Wedding — Monday, April 20, 2026 · 10:00 – 10:30 AM</p>
       <p class="event-location">Avadhani Convention Center, Girinagar, Bengaluru</p>
       <div class="countdown" aria-label="Countdown to wedding day">
         <p class="countdown-label">Countdown to the big day</p>
@@ -132,7 +133,7 @@
       <h2 class="details-title">Details</h2>
       <article class="details-card">
         <div class="venue-image-wrap">
-          <img src="images/avadhi-convention-center-girinagar-bangalore-banquet-halls-09rrkwpwuk.jpg" alt="Avadhani Convention Center" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
+          <img src="images/avadhi-convention-center-girinagar-bangalore-banquet-halls-09rrkwpwuk.jpg" alt="Avadhani Convention Center" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.classList.add('visible');">
           <div class="hero-placeholder" aria-hidden="true">Venue photo<br><small>images/avadhi-convention-center-girinagar-bangalore-banquet-halls-09rrkwpwuk.jpg</small></div>
         </div>
         <h3 class="venue-name">Avadhani Convention Center</h3>

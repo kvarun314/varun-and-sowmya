@@ -11,11 +11,20 @@
   var interval = 4500; // ms between transitions
   var timer = null;
 
+  function loadHeroImageIfNeeded(slideEl) {
+    var img = slideEl ? slideEl.querySelector('img[data-src]') : null;
+    if (img && img.getAttribute('data-src')) {
+      img.setAttribute('src', img.getAttribute('data-src'));
+      img.removeAttribute('data-src');
+    }
+  }
+
   function goToSlide(index) {
     if (!slides.length) return;
     if (index >= slides.length) index = 0;
     if (index < 0) index = slides.length - 1;
     current = index;
+    loadHeroImageIfNeeded(slides[current]);
     slides.forEach(function (s, i) {
       s.classList.toggle('active', i === current);
     });
@@ -39,6 +48,17 @@
 
   if (slides.length) {
     goToSlide(0);
+    // Preload remaining hero images after first paint (keeps initial load to one image)
+    var preloadRest = function () {
+      for (var i = 1; i < slides.length; i++) {
+        loadHeroImageIfNeeded(slides[i]);
+      }
+    };
+    if (typeof requestIdleCallback !== 'undefined') {
+      requestIdleCallback(preloadRest, { timeout: 1500 });
+    } else {
+      setTimeout(preloadRest, 400);
+    }
     slides.forEach(function (_, i) {
       if (!dotsContainer) return;
       var btn = document.createElement('button');
